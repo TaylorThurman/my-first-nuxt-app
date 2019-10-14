@@ -3,10 +3,10 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _2f21a935 = () => interopDefault(import('../pages/users.vue' /* webpackChunkName: "pages/users" */))
-const _d2149810 = () => interopDefault(import('../pages/users/index.vue' /* webpackChunkName: "pages/users/index" */))
-const _736412e3 = () => interopDefault(import('../pages/users/_id/index.vue' /* webpackChunkName: "pages/users/_id/index" */))
-const _2c906202 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _3d1c6cc0 = () => interopDefault(import('../pages/users.vue' /* webpackChunkName: "pages/users" */))
+const _30e89823 = () => interopDefault(import('../pages/users/index.vue' /* webpackChunkName: "pages/users/index" */))
+const _53a2e98e = () => interopDefault(import('../pages/users/_id/index.vue' /* webpackChunkName: "pages/users/_id/index" */))
+const _c7f0212c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -19,19 +19,19 @@ export const routerOptions = {
 
   routes: [{
     path: "/users",
-    component: _2f21a935,
+    component: _3d1c6cc0,
     children: [{
       path: "",
-      component: _d2149810,
+      component: _30e89823,
       name: "users"
     }, {
       path: ":id",
-      component: _736412e3,
+      component: _53a2e98e,
       name: "users-id"
     }]
   }, {
     path: "/",
-    component: _2c906202,
+    component: _c7f0212c,
     name: "index"
   }],
 
